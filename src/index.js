@@ -28,4 +28,18 @@ module.exports = class sj {
     }
     }
     }
+    addFile(file, text){
+        if(!file){
+            throw new Error("Which file do you wanna write?")
+        }
+        if(!text){
+            throw new Error("Blank text cannot be written")
+        }else{
+        try{
+        fs.writeFileSync(file, fs.readFileSync(file, "utf8") + text, "utf8")
+    }catch(error){
+        throw Error(error)
+    }
+    }
+    }
 }
