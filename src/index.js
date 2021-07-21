@@ -1,6 +1,6 @@
 const fs = require("fs")
 
-module.exports = class sj {
+class fseasy {
   readFile(file, property) {
     if (!file) {
       throw new Error("Which file do you wanna read?")
@@ -39,5 +39,6 @@ module.exports = class sj {
         if (err) throw err
       })
     }
-  }
-}
+  }}
+
+module.exports = new fseasy
