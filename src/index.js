@@ -7,9 +7,9 @@ module.exports = class sj {
     }
 
     if (!property) {
-      return fs.readFileSync(file, "utf8")
+       fs.readFileSync(file, "utf8")
     } else {
-      return JSON.parse(fs.readFileSync(file, "utf8"))[property]
+       JSON.parse(fs.readFileSync(file, "utf8"))[property]
     }
   }
 
