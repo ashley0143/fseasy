@@ -41,24 +41,6 @@ class fseasy {
     }
   }
 
-  math(number , operator , number2) {
-        
-    if(operator === "+") {
-        return parseInt(number) + parseInt(number2)
-    }
-
-    if(operator === "-") {
-        return parseInt(number) - parseInt(number2)
-    }
-
-    if(operator === "/" || operator === ":") {
-        return parseInt(number) / parseInt(number2)
-    }
-
-    if(operator === "*" || operator === "x") {
-        return parseInt(number) * parseInt(number2)
-    }
-  }  
 }
 
 module.exports = new fseasy
