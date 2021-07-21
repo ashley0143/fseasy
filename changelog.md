@@ -1,6 +1,4 @@
-# uptade 1.0.1
-
-add: math function added
+# Update 0.0.1-beta
 
 fix: return errors fixed
 
