@@ -1,4 +1,4 @@
-# **S**ava**J**cript
-SavaJcript - A troll folder package
+# FsEasy
+FsEasy - A simplified version of the fs module for Node.js with new functions added.
 
-<img src="https://cdn.discordapp.com/banners/809162412447367169/9e9c83f6fa97ef2d317c30eb9c248787.webp?size=4096">
+<img src="https://media.discordapp.net/attachments/831451584034111499/867507158291316756/20210721_234326.jpg">
