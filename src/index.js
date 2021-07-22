@@ -11,7 +11,7 @@ class fseasy extends event {
        fs.readFileSync(file, "utf8")
     } else {
        JSON.parse(fs.readFileSync(file, "utf8"))[property]
-       this.emit("readFile" , {file:file, property:property})
+       this.emit("readFile" , {file: file, property: property === "" ? null : property})
     }
   }
 
