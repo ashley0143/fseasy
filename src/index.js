@@ -1,6 +1,7 @@
 const fs = require("fs")
+const event = require("events")
 
-class fseasy {
+class fseasy extends event {
   readFile(file, property) {
     if (!file) {
       throw new Error("Which file do you wanna read?")
@@ -10,6 +11,7 @@ class fseasy {
        fs.readFileSync(file, "utf8")
     } else {
        JSON.parse(fs.readFileSync(file, "utf8"))[property]
+       this.emit("readFile" , {file:file, property:property})
     }
   }
 
@@ -24,6 +26,7 @@ class fseasy {
       fs.writeFile(file, text, (err) => {
         if (err) throw err
       })
+      this.emit("writeFile" , {file: file, content: text})
     }
   }
 
@@ -38,8 +41,10 @@ class fseasy {
       fs.appendFile(file, text, (err) => {
         if (err) throw err
       })
+      this.emit("appendFile" , { file: file, content: text})
     }
   }
+
 
 }
 
