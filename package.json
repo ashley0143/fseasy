@@ -2,8 +2,15 @@
   "name": "fseasy",
   "version": "0.0.1-beta",
   "description": "A simplified version of the fs module for Node.js with new functions added.",
-  "keywords": ["fs", "file"],
-  "repository": "falsisdev/fseasy",
+  "keywords": ["fs", "file", "path"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/falsisdev/fseasy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/falsisdev/fseasy/issues"
+  },
+  "homepage": "https://github.com/falsisdev/fseasy#readme",
   "main": "./src/index.js",
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -12,4 +19,7 @@
     }
   },
   "license": "Apache-2.0"
+    "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
