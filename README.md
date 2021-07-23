@@ -21,3 +21,5 @@ FsEasy - A simplified version of the fs module for Node.js with new functions ad
 More funcs, coming soon...
 
 <img src="https://media.discordapp.net/attachments/831451584034111499/867507158291316756/20210721_234326.jpg">
+
+Teşekkürler: [lunexdev](https://github.com/lunexdev), [aloima](https://github.com/aloima), [demir09](https://github.com/demir09)
