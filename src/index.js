@@ -26,7 +26,7 @@ class fseasy extends event {
   }
 
   appendFile(file, text) {
-    if (!file) throw new Error("FsEasy Error: File is not defined.")
+    if (!file) throw new Error("FsEasy Error: File is not provided.")
 
     if (!text) {
       throw new Error("FsEasy Error: Blank text cannot be written.")
