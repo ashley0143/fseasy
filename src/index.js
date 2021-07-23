@@ -40,7 +40,7 @@ class fseasy extends event {
 
  fileExists(file){
    if(!file) throw new Error("FsEasy Error: File is not provided.")
-  return fs.fileExists(file) //boolean
+  return fs.existsSync(file) //boolean
  }
 
 }
