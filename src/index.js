@@ -47,6 +47,12 @@ class fseasy extends event {
     }
   }
 
+ fileExists(file){
+   if(!file){
+     throw new Error("FsEasy Error: File is not defined")
+   }
+  return fs.fileExists(file) //boolean
+ }
 
 }
 
