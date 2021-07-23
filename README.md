@@ -14,6 +14,10 @@ FsEasy - A simplified version of the fs module for Node.js with new functions ad
 ```js
 <fse>.appendFile("package.json", "test")
 ```
+- File Exists
+```js
+<fse>.fileExists("package.json") //boolean
+```
 More funcs, coming soon...
 
 <img src="https://media.discordapp.net/attachments/831451584034111499/867507158291316756/20210721_234326.jpg">
