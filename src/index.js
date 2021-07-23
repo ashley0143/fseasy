@@ -13,7 +13,7 @@ class fseasy extends event {
        this.emit("readFile" , {file: file, property : null, content: content})
     } else {
        let selectedProperty = JSON.parse(fs.readFileSync(file, "utf8"))[property] ? JSON.parse(fs.readFileSync(file, "utf8"))[property] : null
-       this.emit("readFile" , {file: file, property: property ? property : null})
+       this.emit("readFile" , {file: file, property: selectedProperty})
     }
   }
 
