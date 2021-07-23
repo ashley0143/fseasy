@@ -23,4 +23,4 @@ More funcs, coming soon...
 <img src="https://media.discordapp.net/attachments/831451584034111499/867507158291316756/20210721_234326.jpg">
 
 ## Contributors
-Thanks: [falsisdev](https://github.com/falsisdev)[lunexdev](https://github.com/lunexdev), [aloima](https://github.com/aloima), [demir09](https://github.com/demir09)
+Thanks: [falsisdev](https://github.com/falsisdev), [lunexdev](https://github.com/lunexdev), [aloima](https://github.com/aloima), [demir09](https://github.com/demir09)
