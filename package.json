@@ -1,0 +1,15 @@
+{
+  "name": "fseasy",
+  "version": "0.0.1-beta",
+  "description": "A simplified version of the fs module for Node.js with new functions added.",
+  "keywords": ["fs", "file"],
+  "repository": "falsisdev/fseasy",
+  "main": "./src/index.js",
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "env": {
+      "node": true
+    }
+  },
+  "license": "Apache-2.0"
+}
