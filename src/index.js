@@ -54,7 +54,7 @@ try{
 }
   
   jsonWrite(file , data , value) {
-    const dosya = JSON.parse(fs.readFileSync('./db/userdb.json' , 'utf-8'))
+    const dosya = JSON.parse(fs.readFileSync(file , 'utf-8'))
     dosya[data] = value
     return fs.writeFileSync(dosya , JSON.stringify(file, value, 2), "utf-8")
     this.emit("jsonWrite" , {file:file , data:data , value:value})
