@@ -41,8 +41,17 @@ class fseasy extends event {
  fileExists(file){
    if(!file) throw new Error("FsEasy Error: File is not provided.")
   return fs.existsSync(file) //boolean
- }
+ }//fixed
 
+ deleteFile(file){
+   if(!file) throw new Error("FsEasy Error: File is not provided")
+   if(fs.existsSync(file) === false) throw new Error("FsEasy Error: " + file + " is not defined")
+try{
+  fs.unlinkSync(file)
+}catch(error){
+  throw new Error("FsEasy Error: The deletion of the file named " + file + " failed")
+}
+}
 }
 
 module.exports = new fseasy
