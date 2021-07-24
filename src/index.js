@@ -3,7 +3,7 @@ const event = require("events")
 
 class fseasy extends event {
   readFile(file, property) {
-    if (!file) throw new Error("FsEasy Error: File is not provided.")
+    if (!file) return("FsEasy Error: File is not provided.")
 
     if (!property) {
        fs.readFileSync(file, "utf8")
@@ -16,9 +16,9 @@ class fseasy extends event {
   }
 
   writeFile(file, text) {
-    if (!file) throw new Error("FsEasy Error: File is not provided.")
+    if (!file) return("FsEasy Error: File is not provided.")
 
-    if (!text) throw new Error("FsEasy Error: Blank text cannot be written.")
+    if (!text) return("FsEasy Error: Blank text cannot be written.")
       fs.writeFile(file, text, (err) => {
         if (err) throw err;
         this.emit("writeFile" , {file: file, content: text})
@@ -26,30 +26,30 @@ class fseasy extends event {
   }
 
   appendFile(file, text) {
-    if (!file) throw new Error("FsEasy Error: File is not provided.")
+    if (!file) return("FsEasy Error: File is not provided.")
 
     if (!text) {
-      throw new Error("FsEasy Error: Blank text cannot be written.")
+      return("FsEasy Error: Blank text cannot be written.")
     } else {
       fs.appendFile(file, text, (err) => {
-        if (err) throw new Error("FsEasy Error: Could not append file.")
+        if (err) return("FsEasy Error: Could not append file.")
         this.emit("appendFile" , { file: file, content: text})
       })
     }
   }
 
  fileExists(file){
-   if(!file) throw new Error("FsEasy Error: File is not provided.")
+   if(!file) return("FsEasy Error: File is not provided.")
   return fs.existsSync(file) //boolean
  }//fixed
 
  deleteFile(file){
-   if(!file) throw new Error("FsEasy Error: File is not provided")
-   if(fs.existsSync(file) === false) throw new Error("FsEasy Error: " + file + " is not defined")
+   if(!file) return("FsEasy Error: File is not provided")
+   if(fs.existsSync(file) === false) return("FsEasy Error: " + file + " is not defined")
 try{
   fs.unlinkSync(file)
 }catch(error){
-  throw new Error("FsEasy Error: The deletion of the file named " + file + " failed")
+  return("FsEasy Error: The deletion of the file named " + file + " failed")
 }
 }
 }
