@@ -1,5 +1,5 @@
 {
-  "name": "fseasy",
+  "name": "@falsis/fseasy",
   "version": "0.0.1-beta",
   "description": "A simplified version of the fs module for Node.js with new functions added.",
   "keywords": [
