@@ -3,7 +3,7 @@ const event = require("node:events")
 
 class fseasy extends event {
   readFile(file, property) {
-    if (!file) return "FsEasy Error: File is not provided."
+    if (!file) return "FsEasy TypeError: File is not provided."
 
     if (!property) {
       readFileSync(file, "utf8")
@@ -59,4 +59,4 @@ class fseasy extends event {
   }
 }
 
-module.exports = new fseasy()
+module.exports = new fseasy
